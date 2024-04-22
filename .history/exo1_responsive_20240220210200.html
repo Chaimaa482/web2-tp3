@@ -1,0 +1,96 @@
+
+  <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet"> 
+  <title>Image Gallery</title> 
+  <style>
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      body {
+        width: 100vw;
+        background-color: #f9fdff;
+        background-image: linear-gradient(341deg, #f9fdff 0%, #eed9f7 100%);
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+      }
+      img {
+        width: 25%;
+        height: 200px;
+      }
+      input {
+        padding: 5px 10px;
+      }
+      
+   
+      @media (max-width: 600px) {
+  .images {
+    justify-content: center;
+  }
+  img {
+    width: 100%; /* Display one picture per row */
+    margin-bottom: 10px; /* Add some space between images */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  img {
+    width: 45%; /* Display two pictures per row */
+    margin: 2.5% 2.5%; /* Add some space between images */
+  }
+}
+
+@media (min-width: 901px) {
+  img {
+    width: 23%; /* Display four pictures per row */
+    margin: 1% 1%; /* Add some space between images */
+  }
+}
+
+    </style>
+</head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" >
+</head>
+<body>
+    <main>
+        <h1>Galerie d'image</h1>
+        <input type="text" placeholder="search">
+        <div class="images">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg"  alt="">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg" alt="">
+            <img src="image.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>
+</html>
